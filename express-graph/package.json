@@ -1,0 +1,11 @@
+{
+  "name": "express-graph",
+  "version": "1.0.0",
+  "description": "nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "author": "Ashish M",
+  "license": "ISC"
+}
