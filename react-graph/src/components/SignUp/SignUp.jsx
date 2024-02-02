@@ -4,6 +4,13 @@ import React, {useState} from 'react'
 const Login = () => {
     const [loginId, setLoginId] = useState('');
     const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleEmail = (evt) => {
+        let val = evt.target.value;
+        setEmail(val);
+        return 0
+    }
 
     const handleLoginId = (evt) =>{
         let val = evt.target.value;

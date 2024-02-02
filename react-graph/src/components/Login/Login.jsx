@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import axios from 'axios';
 
 const Login = () => {
     const [loginId, setLoginId] = useState('');
@@ -15,9 +15,31 @@ const Login = () => {
         setPassword(val);
        
     }
-    const handleLogin =() => {
+
+
+    const handleLogin = () => {
+        let logInDetails = {
+            "username": loginId,
+            "password": password
+        }
+        if (logInDetails.username === "ashish"){
+            axios.get('/static')
+        }
+
+        // axios.post('/login', {
+        //     logInDetails
+        // })
+        //     .then((res) => {
+        //         axios.get('/static')
+        //     })
+        //     .catch((err) =>
+        //         console.log("error occured : ", err)
+
+        //     );
         return 0
     }
+
+
     return (
         <div className="w-full pt-40">
             <div className="bg-blue-400 dark:bg-slate-800 p-8 rounded shadow-md  md:w-96  flex flex-col items-center mb-auto mt-auto mx-auto">
